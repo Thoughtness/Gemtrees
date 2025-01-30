@@ -1,0 +1,47 @@
+<!--Brackets allow us to use Python in html
+if using javascript then you would make a file in static like pictures css
+then the files will be imported here as follows:
+<script type="text/javascript"
+   src="{{ url_for('static', filename='index.js')}}">
+</script>-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="static/index.css" />
+
+    <title>{% block title %}Home{% endblock %}</title>  <!-- Pseudo Name to override in other html files -->
+    
+  </head>
+  <body>
+    <div class="d-flex">
+      <a class="navbar-brand" href="#">
+        <img src="static/Pictures/20250129_164936.jpg" alt="#" />
+      </a>
+    </div>
+    <nav class="navbar navbar-expand-lg">               <!-- Navigation bar beneath the image -->
+        <a class="nav-item nav-link" id="home" href="/">Home</a>
+        <a class="nav-item nav-link" id="trees" href="/trees">Trees</a>
+        <a class="nav-item nav-link" id="order" href="/order">Order</a>
+        <a class="nav-item nav-link" id="howto" href="/how-to">How to</a>
+        <a class="nav-item nav-link" id="aboutme" href="/about-me">About me</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="container-fluid">{% block content %} {% endblock %}</div>
+  </body>
+</html>

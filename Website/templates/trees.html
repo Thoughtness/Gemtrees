@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Trees{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <div class="container-fluid">
+        <div class="row flex-nowrap ">
+            <div class="col-auto col-xl-2 px-sm-1 ">
+                <div class="d-flex flex-column align-items-center align-items-sm-start pt-2 min-vh-100">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <a class="nav-item nav-link" id="home" href="/">Gemtrees</a>
+                        <a class="nav-item nav-link" id="home" href="/">Wiretrees</a>
+                        <a class="nav-item nav-link" id="home" href="/">LED Trees</a>
+                        <a class="nav-item nav-link" id="home" href="/">Epoxy</a>
+                        <a class="nav-item nav-link" id="home" href="/">Driftwood</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col py-3">
+                Content area...
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
+
