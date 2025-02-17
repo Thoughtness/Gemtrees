@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Me{% endblock %} {% block content %}
+<form method="POST">
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-xl-1 px-sm-1">
+        <div class="d-flex flex-column align-items-sm-start pt-2 min-vh-100">
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <a class="nav-item nav-link" id="me" href="/">Me</a>
+            <a class="nav-item nav-link" id="evolution" href="/">Evolution of Crafting trees</a>
+          </ul>
+        </div>
+      </div>
+      <div class="col py-3">Content area...</div>
+    </div>
+  </div>
+</form>
+
+{% endblock %}

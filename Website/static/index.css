@@ -4,15 +4,15 @@
 }
 
 .navbar{
-  background-color: #abb7be;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .col-auto{
   background-color: #abb7be;
-  color: #000;
 }
 
 .nav-link{
@@ -22,4 +22,12 @@
 
 .d-flex{
   justify-content: center;
+}
+
+.column{
+  width: 16.66%
+}
+
+h5{
+  color: red;
 }
