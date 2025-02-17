@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block title %}Order{% endblock %} {% block content
 %}
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
   <div class="container-fluid">
     <div class="row flex-nowrap">
       <div class="col-auto col-xl-1 px-sm-1">
@@ -133,6 +133,14 @@
           </div>
         </div>
       </div>
+      <div class="column">
+        <div class="col py-3">
+          <h4 align="left">Pictures</h4>
+          <div class="form-group">
+            <p><input type="file" id="file" name="file" multiple></p>
+          </div>
+        </div>
+      </div>  
     </div>
   </div>
 </form>
